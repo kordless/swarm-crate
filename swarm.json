@@ -1,0 +1,18 @@
+{
+  "app_name": "crate",
+  "services": [
+    {
+      "service_name": "crate-service",
+      "components": [
+        {
+          "component_name": "crate",
+          "image": "registry.giantswarm.io/$username/crate",
+          "ports": [4200],
+          "domains": {
+            "$domain": 4200
+          }
+        }
+      ]
+    }
+  ]
+}

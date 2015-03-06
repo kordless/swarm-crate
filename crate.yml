@@ -1,0 +1,15 @@
+# configuration
+cluster.name: foobar
+
+# discovery
+discovery.zen.minimum_master_nodes: 2
+discovery.zen.ping.unicast.hosts:
+  - node1.example.com:4300
+  - node2.example.com:4300
+  - node3.example.com:4300
+
+# paths 
+path:
+  logs: /data/log
+  data: /data/data
+  blobs: /data/blobs
